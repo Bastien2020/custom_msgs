@@ -1,2 +1,2 @@
-int16 anchorId
+string anchorId
 int32 range
