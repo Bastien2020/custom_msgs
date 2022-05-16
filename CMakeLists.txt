@@ -50,6 +50,9 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   Uwb.msg
+  Angular_acceleration.msg
+  Linear_acceleration.msg
+  Euler_angles.msg
 )
 
 ## Generate services in the 'srv' folder
