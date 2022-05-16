@@ -1,0 +1,3 @@
+int32 X_acceleration
+int32 Y_acceleration
+int32 Z_acceleration
