@@ -10,6 +10,7 @@ project(custom_msgs)
 find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
+  geometry_msgs
   message_generation
 )
 
@@ -53,6 +54,7 @@ add_message_files(
   Angular_acceleration.msg
   Linear_acceleration.msg
   Euler_angles.msg
+  uwb_header.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -73,6 +75,7 @@ add_message_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
+  geometry_msgs
 )
 
 ################################################
@@ -107,7 +110,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES custom_msgs
-  CATKIN_DEPENDS rospy std_msgs message_runtime
+  CATKIN_DEPENDS rospy std_msgs geometry_msgs message_runtime
 #  DEPENDS system_lib
 )
 
