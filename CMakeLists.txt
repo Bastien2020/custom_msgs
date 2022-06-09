@@ -55,6 +55,7 @@ add_message_files(
   Linear_acceleration.msg
   Euler_angles.msg
   uwb_header.msg
+  Luxmetre.msg
 )
 
 ## Generate services in the 'srv' folder
